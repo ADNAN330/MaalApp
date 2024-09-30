@@ -1,5 +1,5 @@
 import MaalPage from './MaalPage';
-import SetBudget from './setBudget';
+import SetBudget from './SetBudget';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ function App() {
   return(
     <Router>
       <Routes>
-        {PageCondition ? <Route path="/" element={<MaalPage />} /> : <Route path="/" element={<SetBudget />} /> }
+        {PageCondition ? <Route path="/MaalApp/" element={<MaalPage />} /> : <Route path="/MaalApp/" element={<SetBudget />} /> }
       </Routes>
     </Router>
   );
